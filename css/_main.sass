@@ -1,0 +1,99 @@
+.main
+    padding: $paddingsecciones
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: $colorsecundario
+    .online
+        background: #2e2b2bde
+        border-radius: 15px
+        padding: 15px
+        width: 40%
+        display: grid
+        column-gap: 15px
+        grid-template-columns: repeat(3, 1fr)
+        .online__directo
+            grid-column: span 2
+            display: flex
+            flex-direction: column
+            flex-wrap: nowrap
+            justify-content: space-around
+            .directo__emisora
+                display: flex
+                justify-content: space-evenly
+                div
+                    display: inline-block
+                    img
+                        width: 100%
+                        height: auto
+                        border-radius: 15px
+                    p
+                        margin: 10px
+                        font-size: 17px
+                        color: #fff
+            .directo__audio
+                display: flex
+                text-align: center
+        .online__listadotop
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            .listadotop__titulo
+                text-align: center
+                font-size: 12px
+                font-weight: bold
+                margin-bottom: 5px
+                color: #5c66c0
+            .listadotop__top
+               .top__seccion
+                    display: flex
+                    justify-content: space-between
+                    font-size: 12px
+                    border-bottom: 2px dotted $colorprimario
+                    padding: 12px 0px 5px 0px
+                    .top__seccion__radio
+                        color: #5c66c0
+                        .variable
+                            color: #fff
+                    a
+                        color: #5c66c0
+                    a:hover
+                        color: #000
+                        cursor: pointer
+    .emisoras
+        width: 80%
+        .emisoras__h1
+            padding-left: 100px
+            padding-top: 5px
+            padding-bottom: 5px
+            margin: 25px 
+            border-top: 1px dashed #010101
+            border-bottom: 1px dashed #010101
+        .emisoras__listado
+            display: grid
+            grid-gap: 20px
+            grid-template-columns: repeat(auto-fill, minmax(115px, 0.5fr))
+            justify-content: space-evenly
+            align-content: space-evenly
+            .listado__items
+                align-items: center
+                justify-items: center
+                border-radius: 15px
+                img
+                    height: auto
+                    width: 100%
+                    border-radius: 15px
+            .listado__items:hover
+                align-items: end
+                justify-items: center
+                img:hover
+                    width: 110%
+                    cursor: pointer
+                    box-shadow: 5px 5px 10px rgba(#000 ,0.7)
+        .emisoras__adicional
+            margin-top: 55px
+            p
+                text-align: center
+.sonando
+    box-shadow: 5px 5px 10px rgba(#000 ,0.7)
